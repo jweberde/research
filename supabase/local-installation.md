@@ -12,6 +12,20 @@ cd pgjwt && make install
 
 git clone https://github.com/eulerto/wal2json.git
 cd wal2json && make && make install
+
+systemctl restart postgresql
+```
+
+### PostgresSQL 16
+
+```bash
+apt install make git gcc libc6-dev
+git clone https://github.com/michelp/pgjwt.git
+cd pgjwt && make install
+
+apt-get install postgresql-16-wal2json
+
+systemctl restart postgresql
 ```
 
 ## Run Init SQL
